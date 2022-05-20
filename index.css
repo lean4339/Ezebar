@@ -2,46 +2,156 @@ body{
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
-    background-color: white;
-}
-.header-nav{
-    background-color: blue;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0px 10px;
-}
-.nav{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    list-style: none;
-    flex-direction: column;
-    gap: 5px;
-    padding: 0;
-}
-.link{
-    text-decoration: none;
-}
-.main{
-    height: 300px;
     background-color: black;
+}
+.data{
+    display: none;
+}
+header{
+    color: white;
+    padding: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px;
-    position: relative;
+    flex-direction: column;
+    gap: 10px;
 }
-.main img{
-    width: 90vw;
-    height: 100%;
-    object-fit: cover;
+.logo{
+    align-self: flex-start;
 }
-.logo-main{
-    position: absolute;
-    left: 10%;
-    top: 10%;
+.imagen{
+    width: 100%;
+    height: 140%;
 }
-.texto{
+.us{
+
+}
+.us-subtitulo{
     color: blue;
+}
+.botones{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 10px;
+}
+.productos{
+    background-color: white;
+    padding: 20px;
+}
+.productos-main{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.productos-subtitulo{
+    color: blue;
+}
+.svg{
+    width: 25vw;
+    height: 25vh;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: blue;
+    padding: 20px;
+}
+footer img{
+    width: 25%;
+    height: 25%;
+}
+footer a {
+    text-decoration: none;
+    color: black;
+}
+footer div{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@media (min-width: 700px) {
+    header{
+        flex-direction: row;
+    }
+    .marca{
+        flex-direction: row;
+    }
+    .imagen{
+        width: 70vw;
+        height: 60vh;
+    }
+    .us{
+        width: 75%;
+    }
+    .us-titulo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .botones{
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 30px;
+    }
+    .productos{
+        font-size: 24px;
+    }
+    footer{
+        font-size: 20px;
+    }
+}
+@media (min-width: 1024px) {
+    .logo{
+        width: 100%;
+        font-size: 34px;
+    }
+    .productos{
+        flex-direction: row;
+    }
+    .productos-main{
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    article{
+        width: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    article p{
+        width: 50%;
+    }
+    .data{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-direction: column;
+        width: 100%;
+    }
+    .svg-data{
+        background-color: rgba(255, 255,255, .8);
+        width: 30PX;
+    }
+    .data div{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        gap: 20px;
+    }
+    footer{
+        font-size: 32px;
+    }
 }
