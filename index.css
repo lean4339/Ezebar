@@ -3,6 +3,7 @@ body{
     padding: 0;
     box-sizing: border-box;
     background-color: black;
+    font-family: 'Roboto', sans-serif;
 }
 .data{
     display: none;
@@ -18,6 +19,7 @@ header{
 }
 .logo{
     align-self: flex-start;
+    font-family: 'Koulen', cursive;
 }
 .imagen{
     width: 100%;
@@ -78,6 +80,12 @@ footer div{
 }
 
 @media (min-width: 700px) {
+    .solo{
+        display: none;
+    }
+    .logo{
+        display: block;
+    }
     header{
         flex-direction: row;
     }
@@ -111,6 +119,12 @@ footer div{
 }
 @media (min-width: 1024px) {
     .logo{
+        width: 100%;
+        font-size: 34px;
+    }
+    .solo{
+        
+        display: none;
         width: 100%;
         font-size: 34px;
     }
